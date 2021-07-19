@@ -1,7 +1,3 @@
-using System;
-using System.Collections.Generic;
-using API.Extensions;
-
 namespace API.Entities
 {
     public class AppUser
@@ -12,34 +8,12 @@ namespace API.Entities
 
         public byte[] PasswordHash { get; set; }
         public byte[] PasswordSalt { get; set; }
+        /*private int myVar;
+        public int MyProperty
+        {
+            get { return myVar; }
+            set { myVar = value; }
+        }*/
 
-        public DateTime DateOfBirth { get; set; }
-
-        public string knownAs { get; set; }
-
-        public DateTime Created { get; set; } = DateTime.Now;
-
-        public DateTime LastActive { get; set; } = DateTime.Now;
-
-        public string Gender { get; set; }
-
-        public string Introduction { get; set; }
-
-        public string LookingFor { get; set; }
-
-        public string Interests { get; set; }
-
-        public string City { get; set; }
-        public string Country { get; set; }
-        // public ICollection<Photo> Photos { get; set; }
-        public ICollection<Photo> Photos { get; set; }
-
-        // public int GetAge()
-        // {
-        //     return DateOfBirth.CalculateAge();
-
-
-
-        // }
     }
 }
